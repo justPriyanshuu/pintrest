@@ -1,5 +1,31 @@
 <% include ./partials/header.ejs %>
 
-<div class=""></div>
+<div class="w-full h-screen bg-zinc-300 flex items-center justify-center">
+  <div class="w-[25vw] h-[70vh] bg-zinc-100 px-6 py-5 rounded-md">
+    <h1
+      class="text-3xl capitalize text-center tracking-tight font-semibold text-zinc-700"
+    >
+      Welcome to Pintrest
+    </h1>
+    <form action="">
+      <input
+        class="border-1 rounded-md block mt-2 w-full px-3 py-2"
+        type="text"
+        name="username"
+        placeholder="username"
+      />
+      <input
+        class="border-1 rounded-md block mt-2 w-full px-3 py-2"
+        type="text"
+        name="password"
+        placeholder="password"
+      />
+      <input
+        class="border-1 rounded-md block mt-2 w-full px-3 py-2 bg-red-600 text-white rounded-full"
+        type="submit"
+      />
+    </form>
+  </div>
+</div>
 
 <% include ./partials/footer.ejs %>
