@@ -2,7 +2,7 @@
 
 <div class="profile w-full min-h-screen bg-zinc-700 text-white pt-1">
   <form id="uploadform" hidden action="/fileupload" method="post" enctype="multipart/form-data">
-    <input type="file" name="image" />
+    <input type="file" name="avatar" />
   </form>
   <div class="profileDetails flex flex-col items-center mt-10">
     <div class="profileLogo relative">
@@ -14,7 +14,7 @@
       <div class="w-25 h-25 rounded-full bg-white overflow-hidden">
         <img
           class="w-full h-full object-cover"
-          src="https://imgs.search.brave.com/Lz0XUx4IA6xvbL7ho46I9yUfMajJQfJxrfVBWjoEWdY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzA0LzU2/Lzc3LzA0NTY3N2Q4/M2ZmNDNkNDMzZjJl/OWE5ZjVhOTM2MGRm/LmpwZw"
+          src="/images/uploads/<%=user.profileImage %>"
           alt=""
         />
       </div>

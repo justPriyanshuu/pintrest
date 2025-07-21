@@ -8,7 +8,7 @@ const userSchema = mongoose.Schema({
   email: String,
   password: String,
   contact: Number,
-  profileimage: String,
+  profileImage: String,
   board: {
     type: Array,
     default: [],
