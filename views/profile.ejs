@@ -1,13 +1,37 @@
 <% include ./partials/header.ejs %>
 
- <div class="profile w-full min-h-screen bg-zinc-700 text-white pt-1">
-    <div class="profileDetails flex flex-col items-center mt-15">
-        <div class="w-25 h-25 rounded-full bg-white"></div>
-        <div class="text-l font-semibold">Priyanshu Maurya</div>
-        <div class="text-xs ">@username</div>
-        <a href="/edit" class="px-4 text-xs rounded-full bg-zinc-400 mt-2">Edit</a>
+<div class="profile w-full min-h-screen bg-zinc-700 text-white pt-1">
+  <div class="profileDetails flex flex-col items-center mt-10">
+    <div class="relative">
+        <span class="w-6 h-6 absolute bottom-0 right-1 flex items-center rounded-full justify-center bg-white">
+            <i class="ri-pencil-fill text-zinc-800"></i>
+        </span>
+        <div class="w-25 h-25 rounded-full bg-white overflow-hidden">
+          <img
+            class="w-full h-full object-cover"
+            src="https://imgs.search.brave.com/Lz0XUx4IA6xvbL7ho46I9yUfMajJQfJxrfVBWjoEWdY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzA0LzU2/Lzc3LzA0NTY3N2Q4/M2ZmNDNkNDMzZjJl/OWE5ZjVhOTM2MGRm/LmpwZw"
+            alt=""
+          />
+        </div>
     </div>
- </div>
- 
+    <div class="text-l font-semibold">Priyanshu Maurya</div>
+    <div class="text-xs">@username</div>
+    <a href="/edit" class="px-4 text-xs rounded-full bg-zinc-400 mt-2 py-1">Edit</a>
+    <button class="px-4 py-1 rounded-lg bg-red-700 text-xs mt-2 cursor-pointer">Add new post</button>
+  </div>
+  <div class="profileCards flex flex-wrap gap-5 mt-16 px-10">
+    <div>
+      <div class="w-40 h-30 bg-white rounded-lg overflow-hidden">
+        <img
+          class="w-full h-full object-cover"
+          src="https://imgs.search.brave.com/u-HEh1jCgJgNlbmrGwt0HAwWHszSGtBcSQ-x4fCt9ak/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvbW9u/a2V5LWQtbHVmZnkt/c21pbGUtdW5kZXIt/dGhlLXNreS1hYzBo/bXdzNGh5bDZha2Jq/LmpwZw"
+          alt=""
+        />
+      </div>
+      <h3 class="font-semibold text-l mt-2">All Pins</h3>
+      <h5 class="text-xs opacity-70">28 Pins</h5>
+    </div>
+  </div>
+</div>
 
 <% include ./partials/footer.ejs %>
