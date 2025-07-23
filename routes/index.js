@@ -56,7 +56,7 @@ router.post('/fileupload', isLoggedIn, upload.single('avatar'), async function (
   const user = await userModel.findOne({ username: req.session.passport.user });
   user.profileImage = req.file.filename;
   await user.save();
-  res.render('profile', { user });
+  res.render('profile', { user , nav:true});
 });
 
 router.post('/register', function (req, res, next) {

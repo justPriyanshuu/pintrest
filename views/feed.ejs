@@ -2,13 +2,13 @@
 
 <div class="cards w-full min-h-screen bg-zinc-800 text-white px-6 py-7">
   <div class="cards flex flex-wrap gap-10">
-    <% posts.forEach((data)=>{ %>
+    <% post.forEach((data)=>{ %>
     <div class="card w-35">
       <div class="w-full h-45 bg-zinc-700 rounded-[1rem] overflow-hidden">
         <img class="w-full h-full object-cover" src="/images/uploads/<%= data.image %>" alt="" />
       </div>
       <h4 class="mt-2 text-md font-semibold text-center"><%= data.title %></h4>
-      <h6 class="text-xs opacity-50 font-semibold"><%= data.user.username %></h6>
+      <h6 class="text-[10px] opacity-50 font-semibold text-center"><%= data.user.username %></h6>
     </div>
     <% }) %>
   </div>
