@@ -17,8 +17,13 @@ router.get('/register', function (req, res, next) {
 });
 
 router.get('/profile', isLoggedIn, async function (req, res, next) {
-  const user = await userModel.findOne({ username: req.session.passport.user });
+  const user = await userModel.findOne({ username: req.session.passport.user }).populate('posts');
   res.render('profile', { user, nav: true });
+});
+
+router.get('/show/posts', isLoggedIn, async function (req, res, next) {
+  const user = await userModel.findOne({ username: req.session.passport.user }).populate('posts');
+  res.render('show', { user, nav: true });
 });
 
 router.get('/add', isLoggedIn, async function (req, res, next) {

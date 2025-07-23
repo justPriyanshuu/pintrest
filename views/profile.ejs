@@ -4,7 +4,7 @@
   <form id="uploadform" hidden action="/fileupload" method="post" enctype="multipart/form-data">
     <input type="file" name="avatar" />
   </form>
-  <div class="profileDetails flex flex-col items-center mt-10">
+  <div class="profileDetails flex flex-col items-center mt-7">
     <div class="profileLogo relative">
       <span
         class="w-6 h-6 absolute bottom-0 right-1 flex items-center rounded-full justify-center bg-white cursor-pointer"
@@ -37,6 +37,17 @@
       </div>
       <h3 class="font-semibold text-l mt-2">All Pins</h3>
       <h5 class="text-xs opacity-70">28 Pins</h5>
+    </div>
+    <div>
+      <div class="w-40 h-30 bg-white rounded-lg overflow-hidden">
+        <img
+          class="w-full h-full object-cover"
+          src="/images/uploads/<%= user?.posts[0]?.image %>"
+          alt=""
+        />
+      </div>
+      <a href="/show/posts" class="block font-semibold text-l mt-2">Your Uploaded Posts</a>
+      <h5 class="text-xs opacity-70"><%= user.posts.length %> Pins</h5>
     </div>
   </div>
 </div>
