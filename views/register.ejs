@@ -4,12 +4,17 @@
   class="w-full h-screen bg-center bg-cover bg-[url(https://images.pexels.com/photos/3816395/pexels-photo-3816395.jpeg)] flex items-center justify-center before:content-[''] before:absolute before:inset-0 before:bg-black before:opacity-80"
 >
   <div class="relative w-[25vw] bg-zinc-100 px-6 py-6 rounded-[20px]">
-    <h1
-      class="text-[30px] capitalize text-center tracking-tight font-semibold text-zinc-700 mb-2"
-    >
-      Create new account 
+    <h1 class="text-[30px] capitalize text-center tracking-tight font-semibold text-zinc-700 mb-2">
+      Create new account
     </h1>
     <form action="/register" method="post">
+      <label for="fullname">Full Name</label>
+      <input
+        class="h-[35px] border-1 rounded-md block mt-3 mb-3 w-full px-3 py-2"
+        type="text"
+        name="fullname"
+        placeholder="Enter your Full name"
+      />
       <label for="username">Username</label>
       <input
         class="h-[32px] border-1 rounded-md block mt-2 mb-2 w-full px-3 py-2"
@@ -24,13 +29,6 @@
         name="email"
         placeholder="Enter your email"
       />
-      <label for="contact">Contact</label>
-      <input
-        class="h-[32px] border-1 rounded-md block mt-2 mb-2 w-full px-3 py-2"
-        type="number"
-        name="contact"
-        placeholder="Enter your contact"
-      />
       <label for="password">Password</label>
       <input
         class="h-[32px] border-1 rounded-md block mt-2 w-full px-3 py-2"
@@ -44,15 +42,13 @@
         value="Create"
       />
       <p class="text-xs font-semibold text-zinc-700 mt-2 text-center">
-        By continuing, you agree to Pinterest's Terms of Service and acknowledge
-        you've read our Privacy Policy. Notice at collection.
+        By continuing, you agree to Pinterest's Terms of Service and acknowledge you've read our
+        Privacy Policy. Notice at collection.
       </p>
     </form>
-    <a
-      href="/"
-      class="inline-block text-xs mt-4 text-zinc-700 text-center w-full font-semibold"
-      >Already have an account ? Login</a
-    >
+    <a href="/" class="inline-block text-xs mt-4 text-zinc-700 text-center w-full font-semibold">
+      Already have an account ? Login
+    </a>
   </div>
 </div>
 
